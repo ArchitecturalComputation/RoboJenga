@@ -14,7 +14,7 @@ class VirtualCamera : ICamera
         var t = new[]
         {
            Extensions.PoseFromRotation(0.1f,0.045f,0.3f,90.0f),
-           Extensions.PoseFromRotation(0.2f,0.045f,0.1f,30.0f),
+           Extensions.PoseFromRotation(0.2f,0.045f,0.5f,30.0f),
            Extensions.PoseFromRotation(0.4f,0.045f,0.3f,45.0f)
         };
 
