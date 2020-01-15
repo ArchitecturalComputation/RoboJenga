@@ -43,12 +43,12 @@ class StackingExample : IStackable
         var pick = tiles[0];
         var place = pick;
         place.position.x += 0.7f;
-        place.position.y += 0.045f * _count;
+       // place.position.y += 0.045f * _count;
+       
         Display.Add(place);
         Message = $"Placing tile number {_count + 1 }";
 
         _count++;
-
 
         return new PickAndPlaceData() { Pick = pick, Place = place };
     }

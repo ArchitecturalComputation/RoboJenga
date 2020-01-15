@@ -7,10 +7,11 @@ MODULE AutoPickAndPlace
     ENDRECORD
 
     PERS tooldata gripper:=[TRUE,[[0.000,0.000,126.300],[0.00000,0.70711,-0.70711,0.00000]],[4.350,[0.000,0.000,126.300],[1,0,0,0],0,0,0]];
-TASK PERS wobjdata frame:=[FALSE,TRUE,"",[[555.500,644.000,194.400],[0.69813,-0.00181,0.00000,-0.71597]],[[0,0,0],[1,0,0,0]]];
+    TASK PERS wobjdata frame:=[FALSE,TRUE,"",[[555.440,645.110,194.260],[0.69742,-0.00175,-0.00053,-0.71666]],[[0,0,0],[1,0,0,0]]];
 
-    ! PERS string IP:="192.168.0.3";
-    PERS string IP:="127.0.0.1";
+
+    PERS string IP:="192.168.0.3";
+    ! PERS string IP:="127.0.0.1";
     PERS num port:=1025;
     VAR socketdev socket;
     VAR extjoint exj:=[9E9,9E9,9E9,9E9,9E9,9E9];

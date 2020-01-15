@@ -67,7 +67,12 @@ public class StackingVisionReplicate : IStackable
 
     PickAndPlaceData BuildBlocks()
     {
-        if (_tileCount == 0) return null;
+        if (_tileCount == 0)
+        {
+            Message = "Finished rebuilding.";
+            return null;
+        }
+
         var pick = JengaLocation(_tileCount - 1);
         var place = _pickTiles[_tileCount - 1];
         _tileCount--;
